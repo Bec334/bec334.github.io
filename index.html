@@ -1,39 +1,154 @@
 <!DOCTYPE html>
+
 <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="/normalize.css" rel="stylesheet">
   <link href="/style.css" rel="stylesheet">
 
 
 </head>
+
 <body>
   <header>
-    <img src="https://i.imgur.com/cTr1tNK.png">
-    <h1>Rebecca's Blog</h1>
+    <img src="assets/npslogo.png">
+    <h1>National Park Service Tracker</h1>
+    <h2>Look up NPS locations (parks and beyond!) by state and track if you've been!</h2>
     <ul>
-      <li><a href="#">About Me</a></li>
-      <li><a href="#">Best Travel Tips</a></li>
-      <li><a href="#">Worst Travel Tips</a></li>
-      <li><a href="#">Submit a Question</a></li>
 
     </ul>
   </header>
-  <article>
-    <h2>Wanderlust</h2>
-    <p>Whimsical wanderlust travelblogger pretty wanderlust, adventure fun traveling blogger pretty expedition modern theme traveling. Website whimsical clean pretty expedition cute blogger organized whimsical. Organized excursion blogger wanderlust excursion traveling blogger Travel excursion.
-</p>
-    <button>Like</button>
-  </article>
-  <article>
-    <h2>Sabbatical</h2>
-    <p>Modern travelblogger traveling cute expedition colorful clean Travel, Travel clean whimsical darn. Simple theme pretty theme cute, blogger webdesign whimsical traveler website. Website colorful theme simple organized wanderlust, website website webdesign design. Design wanderlust darn cute cute Travel theme. Organized fun simple adventure, excursion colorful expedition cute design design organized.
-</p>
-    <button>Like</button>
-  </article>
-  <article>
-    <h2>Adventure</h2>
-    <p>Simple pretty colorful wanderlust theme pretty, adventure colorful theme website excursion. Expedition wanderlust travelblogger fun colorful wanderlust cute whimsical, expedition expedition expedition WordPress fun. Colorful design cute fun modern excursion modern wanderlust whimsical, simple clean theme adventure.</p>
-    <button>Like</button>
-  </article>
-<script> </script>
+  <section>
+    <h3>Select a State to view a list of its National Parks</h3>
+    <div class="row">
+    <div id='states'>
+      <button type="button" class="btn btn-outline-info">Alabama</button>
+      <button type="button" class="btn btn-outline-info">Alaska</button>
+      <button type="button" class="btn btn-outline-info">Arizona</button>
+      <button type="button" class="btn btn-outline-info">Arkansas</button>
+      <button type="button" class="btn btn-outline-info">California</button>
+      <button type="button" class="btn btn-outline-info">Colorado</button>
+      <button type="button" class="btn btn-outline-info">Connecticut</button>
+      <button type="button" class="btn btn-outline-info">Delaware</button>
+      <button type="button" class="btn btn-outline-info">Florida</button>
+      <button type="button" class="btn btn-outline-info">Georgia</button>
+      <button type="button" class="btn btn-outline-info">Hawaii</button>
+      <button type="button" class="btn btn-outline-info">Idaho</button>
+      <button type="button" class="btn btn-outline-info">Illinois</button>
+      <button type="button" class="btn btn-outline-info">Indiana</button>
+      <button type="button" class="btn btn-outline-info">Iowa</button>
+      <button type="button" class="btn btn-outline-info">Kansas</button>
+      <button type="button" class="btn btn-outline-info">Kentucky</button>
+      <button type="button" class="btn btn-outline-info">Louisiana</button>
+      <button type="button" class="btn btn-outline-info">Maine</button>
+      <button type="button" class="btn btn-outline-info">Maryland</button>
+      <button type="button" class="btn btn-outline-info">Massachusetts</button>
+      <button type="button" class="btn btn-outline-info">Michigan</button>
+      <button type="button" class="btn btn-outline-info">Minnesota</button>
+      <button type="button" class="btn btn-outline-info">Mississippi</button>
+      <button type="button" class="btn btn-outline-info">Missouri</button>
+      <button type="button" class="btn btn-outline-info">Montana</button>
+      <button type="button" class="btn btn-outline-info">Nebraska</button>
+      <button type="button" class="btn btn-outline-info">Nevada</button>
+      <button type="button" class="btn btn-outline-info">New Hampshire</button>
+      <button type="button" class="btn btn-outline-info">New Jersey</button>
+      <button type="button" class="btn btn-outline-info">New Mexico</button>
+      <button type="button" class="btn btn-outline-info">New York</button>
+      <button type="button" class="btn btn-outline-info">North Carolina</button>
+      <button type="button" class="btn btn-outline-info">North Dakota</button>
+      <button type="button" class="btn btn-outline-info">Ohio</button>
+      <button type="button" class="btn btn-outline-info">Oklahoma</button>
+      <button type="button" class="btn btn-outline-info">Oregon</button>
+      <button type="button" class="btn btn-outline-info">Pennsylvania</button>
+      <button type="button" class="btn btn-outline-info">Rhode Island</button>
+      <button type="button" class="btn btn-outline-info">South Carolina</button>
+      <button type="button" class="btn btn-outline-info">South Dakota</button>
+      <button type="button" class="btn btn-outline-info">Tennessee</button>
+      <button type="button" class="btn btn-outline-info">Texas</button>
+      <button type="button" class="btn btn-outline-info">Utah</button>
+      <button type="button" class="btn btn-outline-info">Vermont</button>
+      <button type="button" class="btn btn-outline-info">Virginia</button>
+      <button type="button" class="btn btn-outline-info">Washington</button>
+      <button type="button" class="btn btn-outline-info">West Virginia</button>
+      <button type="button" class="btn btn-outline-info">Wisconsin</button>
+      <button type="button" class="btn btn-outline-info">Wyoming</button>
+      </div>
+    </div>
+  <div>
+  </section>
+
+<span>
+  <section id='selectedPark'>
+
+  <div class="card-group">
+  
+  </div>
+  </section>
+</span>  
+
+
+
+<!-- Create a Support Request  -->
+
+<section id='help'>
+  <div id='form-user'>
+  
+    <h3>Hi, there! Who are you?</h3>
+    <form>
+      <div class="row">
+        <div class="col">
+          <input type="text" id='username' class="form-control" placeholder="User Name">
+        </div>
+        <div class="col">
+          <input type="text" id='email' class="form-control" placeholder="Email">
+        </div>
+        <div class="col">
+        <button type="submit" id='submit' class="btn btn-primary">Submit</button>
+          </div>
+      </div>
+  
+    </form>
+  </div>
+ 
+  <button type="button" id='help-button' class="btn btn-secondary btn-lg btn-block">Need help?</button>
+
+  <div id='help-form'>
+  <form id='help-me'>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+      </div>
+      <div class="form-group col-md-6">
+        <input type="Name" class="form-control" id="inputName" placeholder="Your Name">
+      </div>
+      <div class="form-group col-md-6">
+        <input type="name" class="form-control" id="inputSubject" placeholder="Subject">
+      </div> 
+    </div>
+    <div class="form-group">
+      <textarea class="form-control" id="inputDescription" rows="3" placeholder="Description"></textarea>
+    </div>
+    <button class="btn btn-primary" id='help-submit' type="submit">Submit form</button>
+
+  </form>
+</div>
+
+<!-- button to look up support requests -->
+<button type="button" id='lookup-button' class="btn btn-secondary btn-lg btn-block">Look Up Help Requests</button>
+
+</section>
+
+<!-- Support Requests LIST  -->
+<section id='req-list'>
+  <div class="card">
+  </div>
+</section>
+ 
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+
+  <script type="text/javascript" src="script.js"></script>
+
 </body>
+
 </html>

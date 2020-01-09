@@ -1,17 +1,40 @@
 
 header {
+  
   text-align: center;
-  background: url('https://i.imgur.com/lCDqD04.jpg');
+  background: url('assets/landscape.jpg');
   background-size: cover;
   background-position: center;
   color: white;
+  max-width:100%;
+  max-height:100%;
+  object-fit: contain;
 }
+
 a {
   color: white;
 }
 h1 {
   font-size: 70px;
 }
+h3{ 
+  margin: 12px;
+  text-align: center;
+  font-size: 30px;
+}
+
+#states { 
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+  text-align: center;
+
+}
+
+button{ 
+  margin: 6px 5px;
+}
+
 img {
   margin: 40px 0px 0px 0px;
   border: 7px solid white;
@@ -48,4 +71,63 @@ article {
 body { 
   
   background: rgb(227, 231, 230);
+  text-align: center;
 } 
+
+div#form-user {
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+
+  }
+
+
+
+
+div.card-body { 
+
+  padding-left: 6px;
+  padding-right: 6px;
+
+}
+
+#card-button{ 
+  display: inline-block;
+}
+
+ .card-group ( 
+  text-align: center;
+)
+
+
+}
+button#help-button {
+    width: 500px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+div#help-form {
+  display: none;
+}
+
+.card { 
+text-align: left;
+}
+
+.card-body {
+  max-width: 400px;
+  align-items: center;
+
+}
+
+
+.card-group {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center 
+}
+

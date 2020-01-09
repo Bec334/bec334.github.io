@@ -1,0 +1,10 @@
+//9057cdf98758ec66e5964438e83d6320174ebf0e2a88e1c57196cd732020dbf1 - secret 
+
+https://z3nrebecca1578572730.zendesk.com/oauth/authorizations/new?response_type=code&redirect_uri=https://z3nrebecca1578572730.zendesk.com/help&client_id=npsapp&scope=read%20write
+
+
+https://z3nrebecca1578572730.zendesk.com/help?code=af96f2d45bb30d7e69a8f4424c3a81224c95ff8263e66027bb05473f24eedf51
+
+curl https://z3nrebecca1578572730.zendesk.com/oauth/tokens   -H "Content-Type: application/json"  -d '{"grant_type": "authorization_code", "code": "af96f2d45bb30d7e69a8f4424c3a81224c95ff8263e66027bb05473f24eedf51", "client_id": "npsapp", "client_secret": "9057cdf98758ec66e5964438e83d6320174ebf0e2a88e1c57196cd732020dbf1",  "redirect_uri": "https://z3nrebecca1578572730.zendesk.com/help", "scope": "read" }'  -X POST
+
+{"access_token":"5a5346ef08152aa605c64b6050b88ded6f76555fe9507cc13dc298e67fc40e6f","token_type":"bearer","scope":"read write"}%
